@@ -55,8 +55,9 @@ v2.0.0
 - Added tooltip for encrypted messages
 - Improved translations
 
-v2.0.1
+v2.0.2
 - Update icon directory path handling for compatibility with Roundcube 1.7
+
 
 ## Screenshots
 
