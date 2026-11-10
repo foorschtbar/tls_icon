@@ -33,7 +33,8 @@ class tls_icon extends rcube_plugin
 				return $p;
 			}
 
-			$icondir = "plugins/" . $this->ID . "/icons/";
+			// Roundcube >= 1.7 uses public_html as web root and serves plugin assets via static.php
+			$icondir = (file_exists(INSTALL_PATH . 'public_html/static.php') ? 'static.php/' : '') . "plugins/" . $this->ID . "/icons/";
 
 			$received_Headers = $p['headers']->others['received'];
 
